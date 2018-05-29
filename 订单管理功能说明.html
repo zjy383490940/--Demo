@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>订单管理功能说明</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <link href="resources/css/jquery-ui-themes.css" type="text/css" rel="stylesheet"/>
+    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
+    <link href="data/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="files/订单管理功能说明/styles.css" type="text/css" rel="stylesheet"/>
+    <script src="resources/scripts/jquery-1.7.1.min.js"></script>
+    <script src="resources/scripts/jquery-ui-1.8.10.custom.min.js"></script>
+    <script src="resources/scripts/prototypePre.js"></script>
+    <script src="data/document.js"></script>
+    <script src="resources/scripts/prototypePost.js"></script>
+    <script src="files/订单管理功能说明/data.js"></script>
+    <script type="text/javascript">
+      $axure.utils.getTransparentGifPath = function() { return 'resources/images/transparent.gif'; };
+      $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
+      $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };
+    </script>
+  </head>
+  <body>
+    <div id="base" class="">
+
+      <!-- Unnamed (矩形) -->
+      <div id="u2055" class="ax_default heading_1">
+        <div id="u2055_div" class=""></div>
+        <div id="u2055_text" class="text ">
+          <p><span>订单管理</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u2056" class="ax_default heading_2">
+        <div id="u2056_div" class=""></div>
+        <div id="u2056_text" class="text ">
+          <p><span>1、订单管理</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u2057" class="ax_default heading_2">
+        <div id="u2057_div" class=""></div>
+        <div id="u2057_text" class="text ">
+          <p><span>存储订单明细与订单状态，方便客服查看。</span></p><p><span><br></span></p><p><span>因门店订单有可能被拒单后按规则转为电商订单，所以订单需包含门店订单和电商订单。</span></p><p><span><br></span></p><p><span>第一期，电商订单无需更新其状态。</span></p><p><span><br></span></p><p><span>门店订单以子订单为粒度，根据订单状态总体划分为：待分配、已接单、已发货、已取消。</span></p><p><span><br></span></p><p><span>待派单：派单到门店，等待门店接单。（天猫状态：ALLOCATION_NOTIFIED、SHOP_DENY）</span></p><p><span><br></span></p><p><span>已接单：门店已接单，等待发货。（天猫状态：SHOP_ALLOCATION、SHOP_CANCEL）</span></p><p><span><br></span></p><p><span>已发货：门店已发货，回写平台物流信息。（天猫状态：SHOP_HANDLED、SHOP_CANCEL_DENIED）</span></p><p><span><br></span></p><p><span>售中：订单已取消，进入退款流程。（天猫状态：SHOP_CANCEL_CONFIRM、SHOP_HANDLED_CANCEL、MATCHED）</span></p><p><span><br></span></p><p><span>售后：订单已取消，进入退款流程。（天猫状态：SHOP_CANCEL_CONFIRM、SHOP_HANDLED_CANCEL、MATCHED）</span></p><p><span><br></span></p><p><span><br></span></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

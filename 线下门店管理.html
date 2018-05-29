@@ -1,0 +1,196 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>线下门店管理</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <link href="resources/css/jquery-ui-themes.css" type="text/css" rel="stylesheet"/>
+    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
+    <link href="data/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="files/线下门店管理/styles.css" type="text/css" rel="stylesheet"/>
+    <script src="resources/scripts/jquery-1.7.1.min.js"></script>
+    <script src="resources/scripts/jquery-ui-1.8.10.custom.min.js"></script>
+    <script src="resources/scripts/prototypePre.js"></script>
+    <script src="data/document.js"></script>
+    <script src="resources/scripts/prototypePost.js"></script>
+    <script src="files/线下门店管理/data.js"></script>
+    <script type="text/javascript">
+      $axure.utils.getTransparentGifPath = function() { return 'resources/images/transparent.gif'; };
+      $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
+      $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };
+    </script>
+  </head>
+  <body>
+    <div id="base" class="">
+
+      <!-- Unnamed (矩形) -->
+      <div id="u43" class="ax_default heading_1">
+        <div id="u43_div" class=""></div>
+        <div id="u43_text" class="text ">
+          <p><span>门店管理</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u44" class="ax_default heading_2">
+        <div id="u44_div" class=""></div>
+        <div id="u44_text" class="text ">
+          <p><span>1、门店管理层级</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u45" class="ax_default heading_2">
+        <div id="u45_div" class=""></div>
+        <div id="u45_text" class="text ">
+          <p><span style="font-family:'Arial Normal', 'Arial';">①线下门店区分</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">自营店铺、经销店铺</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u46" class="ax_default heading_2">
+        <div id="u46_div" class=""></div>
+        <div id="u46_text" class="text ">
+          <p><span>②线下门店要有地址信息（到区，可用区域编码），以便重新组织成区域下的店铺、省份下的店铺。</span></p><p><span>线下店铺数据结构跟微信门店、淘宝门店的数据结构保持一致，方便将来拓展</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u47" class="ax_default paragraph">
+        <div id="u47_div" class=""></div>
+        <div id="u47_text" class="text ">
+          <p><span style="font-family:'Arial Normal', 'Arial';">可导入字段说明：</span></p><p><span style="font-family:'Arial Normal', 'Arial';">- 品牌，</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">必填，如：国美、麦当劳，不应包含地区、地址、分店名等信息，错误示例：北京国美，15个汉字或30个英文字符内</span><span style="font-family:'Arial Normal', 'Arial';">。</span></p><p><span style="font-family:'Arial Normal', 'Arial';">- 门店全称，必填。50字以内，例如“麦当劳广州敦和路店”。</span></p><p><span style="font-family:'Arial Normal', 'Arial';">- 门店简称，必填。16字以内，例如“敦和路店”。</span></p><p><span style="font-family:'Arial Normal', 'Arial';">- 门店邮箱，必填，请根据邮箱规则填写。门店相关信息将会发送至对应邮箱。</span></p><p><span style="font-family:'Arial Normal', 'Arial';">- 联系人，必填，10字以内。</span></p><p><span style="font-family:'Arial Normal', 'Arial';">- 联系人手机号，必填，11位手机号数字。</span></p><p><span style="font-family:'Arial Normal', 'Arial';">- 固定电话，必填，固定电话需加区号；区号、分机号均用“-”连接</span></p><p><span style="font-family:'Arial Normal', 'Arial';">- 省份，必填</span></p><p><span style="font-family:'Arial Normal', 'Arial';">- 城市，必填</span></p><p><span style="font-family:'Arial Normal', 'Arial';">- 区域，必填</span></p><p><span style="font-family:'Arial Normal', 'Arial';">- 详细地址，必填，50字以内，详细街道地址，不要有省市区信息。</span></p><p><span style="font-family:'Arial Normal', 'Arial';">- 经度，可选，有的话最好填，用腾讯的工具&nbsp; -- 暂时不用前端展示，数据库设计这个字段</span></p><p><span style="font-family:'Arial Normal', 'Arial';">- 维度，可选，有的话最好填，用腾讯的工具&nbsp; -- 暂时不用前端展示，数据库设计这个字段</span></p><p><span style="font-family:'Arial Normal', 'Arial';">- 经纬度类型，可选，1：GPS；2：腾讯地图；3：百度地图；4：高德地图&nbsp; -- 暂时不用前端展示，数据库设计这个字段</span></p><p><span style="font-family:'Arial Normal', 'Arial';">- 经营类型，必填，“线下自营”或“线下加盟”。</span></p><p><span style="font-family:'Arial Normal', 'Arial';">- 门店编码，必填，本系统跟品牌商系统识别唯一门店的标识。</span></p><p><span style="font-family:'Arial Normal', 'Arial';">- 阿里门店类型：普通门店，商城，仓库（暂时用这几个字段就可以了)</span></p><p><span style="font-family:'Arial Normal', 'Arial';">- 门店主营业务：调用阿里接口，提供选项</span></p><p><span style="font-family:'Arial Normal', 'Arial';">- 开始营业时间：HH:MM</span></p><p><span style="font-family:'Arial Normal', 'Arial';">-关闭营业时间：HH:MM</span></p><p><span style="font-family:'Arial Normal', 'Arial';">-门店状态：HOLD=暂停营业 ，CLOSE=关店，NORMAL=正常，写中文就可以了</span></p><p><span style="font-family:'Arial Normal', 'Arial';">-门店介绍：一段介绍文字</span></p><p><span style="font-family:'Arial Normal', 'Arial';">- </span></p><p><span style="font-family:'Arial Normal', 'Arial';"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial';"><br></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u48" class="ax_default heading_2">
+        <div id="u48_div" class=""></div>
+        <div id="u48_text" class="text ">
+          <p><span>2、线下门店数据关键字段</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u49" class="ax_default paragraph">
+        <div id="u49_div" class=""></div>
+        <div id="u49_text" class="text ">
+          <p><span>商家在ERP等系统中调用该接口，新建线下门店，并将其与线上店铺关联。新建门店成功后，会返回一个门店ID，是一个全局ID，后续所有的接口都用此ID通信。其中门店主营类目字段，需要通过1.2的“门店类目获取接口”获取所有类目候选项，然后上传对应的类目编号。</span></p><p><span><br></span></p><p><span>https://open.taobao.com/docs/doc.htm?spm=a219a.7629140.0.0.11OUaK&amp;treeId=18&amp;articleId=104651&amp;docType=1</span></p><p><span>字段说明：</span></p><p><span><br></span></p><p><span>&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span></p><p><span>&lt;request&gt; </span></p><p><span>&nbsp; &lt;storeCode&gt;建议ERP系统中 门店编码+shopId，string（50），必填&lt;/storeCode&gt;&nbsp; </span></p><p><span>&nbsp; &lt;companyName&gt;商户名称（例如，甘其食），string（50），必填&lt;/companyName&gt;&nbsp; </span></p><p><span>&nbsp; &lt;storeName&gt;门店名称（例如，文一西路淘宝店），string（50），必填&lt;/storeName&gt;&nbsp; </span></p><p><span>&nbsp; &lt;storeType&gt;类型，string（50），NORMAL=普通门店，MALL = 商城, MALL_SHOP = 店中店, LIGHT_SHOP = 淘小铺, HOSPITAL = 阿里健康（医院）, DEPARTMENT = 阿里健康（医院科室）, WAREHOUSE=仓库，必填&lt;/storeType&gt;&nbsp; </span></p><p><span>&nbsp; &lt;mainCategory&gt;门店主营类目，int，必填&lt;/mainCategory&gt;&nbsp; </span></p><p><span>&nbsp; &lt;startTime&gt;开始营业时间，string (19) , HH:MM，必填&lt;/startTime&gt;&nbsp; </span></p><p><span>&nbsp; &lt;endTime&gt;关闭营业时间，string (19) , HH:MM，必填&lt;/endTime&gt;&nbsp; </span></p><p><span>&nbsp; &lt;address&gt; </span></p><p><span>&nbsp;&nbsp;&nbsp; &lt;region&gt;区域（如华南区），string(50)&lt;/region&gt;&nbsp; </span></p><p><span>&nbsp;&nbsp;&nbsp; &lt;province&gt;省份，string（50），必填&lt;/province&gt;&nbsp; </span></p><p><span>&nbsp;&nbsp;&nbsp; &lt;city&gt;城市，string（50），必填&lt;/city&gt;&nbsp; </span></p><p><span>&nbsp;&nbsp;&nbsp; &lt;area&gt;区域，string（50），必填&lt;/area&gt;&nbsp; </span></p><p><span>&nbsp;&nbsp;&nbsp; &lt;town&gt;村镇，string（50）&lt;/town&gt;&nbsp; </span></p><p><span>&nbsp;&nbsp;&nbsp; &lt;detailAddress&gt;详细地址，string（50），必填&lt;/detailAddress&gt;&nbsp; </span></p><p><span>&nbsp;&nbsp;&nbsp; &lt;countryCode&gt;国家二字码，string（50）&lt;/countryCode&gt; </span></p><p><span>&nbsp; &lt;/address&gt;&nbsp; </span></p><p><span>&nbsp; &lt;storeStatus&gt;门店状态，string（50），HOLD=暂停营业 ，CLOSE=关店，NORMAL=正常&lt;/storeStatus&gt;&nbsp; </span></p><p><span>&nbsp; &lt;storeDescription&gt;商户介绍，string（500）&lt;/storeDescription&gt;&nbsp; </span></p><p><span>&nbsp; &lt;storeKeeper&gt; </span></p><p><span>&nbsp;&nbsp;&nbsp; &lt;name&gt;姓名，string（50）&lt;/name&gt;&nbsp; </span></p><p><span>&nbsp;&nbsp;&nbsp; &lt;tel&gt;固定电话，string（50），必填&lt;/tel&gt;&nbsp; </span></p><p><span>&nbsp;&nbsp;&nbsp; &lt;mobile&gt;移动电话，string（50），必填&lt;/mobile&gt;&nbsp; </span></p><p><span>&nbsp;&nbsp;&nbsp; &lt;fax&gt;传真，string（50）&lt;/fax&gt;&nbsp; </span></p><p><span>&nbsp;&nbsp;&nbsp; &lt;zipCode&gt;邮编，string（50）&lt;/zipCode&gt; </span></p><p><span>&nbsp; &lt;/storeKeeper&gt;&nbsp; </span></p><p><span>&nbsp; &lt;remark&gt;备注，string（500）&lt;/remark&gt; </span></p><p><span>&lt;/request&gt;</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u50" class="ax_default heading_2">
+        <div id="u50_div" class=""></div>
+        <div id="u50_text" class="text ">
+          <p><span>可通过模板批量导入的方式导入下面的字段</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u51" class="ax_default flow_shape">
+        <div id="u51_div" class=""></div>
+        <div id="u51_text" class="text ">
+          <p><span>自营</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u52" class="ax_default flow_shape">
+        <div id="u52_div" class=""></div>
+        <div id="u52_text" class="text ">
+          <p><span>加盟</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u53" class="ax_default flow_shape">
+        <div id="u53_div" class=""></div>
+        <div id="u53_text" class="text ">
+          <p><span>店铺1</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u54" class="ax_default flow_shape">
+        <div id="u54_div" class=""></div>
+        <div id="u54_text" class="text ">
+          <p><span>店铺2</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u55" class="ax_default flow_shape">
+        <div id="u55_div" class=""></div>
+        <div id="u55_text" class="text ">
+          <p><span>店铺2</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u56" class="ax_default connector">
+        <img id="u56_seg0" class="img " src="images/线下门店管理/u56_seg0.png" alt="u56_seg0"/>
+        <img id="u56_seg1" class="img " src="images/线下门店管理/u56_seg1.png" alt="u56_seg1"/>
+        <img id="u56_seg2" class="img " src="images/线下门店管理/u56_seg2.png" alt="u56_seg2"/>
+        <img id="u56_seg3" class="img " src="images/线下门店管理/u56_seg3.png" alt="u56_seg3"/>
+        <img id="u56_seg4" class="img " src="images/线下门店管理/u56_seg4.png" alt="u56_seg4"/>
+        <div id="u56_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u57" class="ax_default connector">
+        <img id="u57_seg0" class="img " src="images/线下门店管理/u57_seg0.png" alt="u57_seg0"/>
+        <img id="u57_seg1" class="img " src="images/线下门店管理/u57_seg1.png" alt="u57_seg1"/>
+        <img id="u57_seg2" class="img " src="images/线下门店管理/u57_seg2.png" alt="u57_seg2"/>
+        <img id="u57_seg3" class="img " src="images/线下门店管理/u57_seg3.png" alt="u57_seg3"/>
+        <div id="u57_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u58" class="ax_default connector">
+        <img id="u58_seg0" class="img " src="images/线下门店管理/u58_seg0.png" alt="u58_seg0"/>
+        <img id="u58_seg1" class="img " src="images/系统业务层级/u23_seg1.png" alt="u58_seg1"/>
+        <img id="u58_seg2" class="img " src="images/系统业务层级/u40_seg2.png" alt="u58_seg2"/>
+        <img id="u58_seg3" class="img " src="images/系统业务层级/u40_seg3.png" alt="u58_seg3"/>
+        <div id="u58_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u59" class="ax_default connector">
+        <img id="u59_seg0" class="img " src="images/线下门店管理/u59_seg0.png" alt="u59_seg0"/>
+        <img id="u59_seg1" class="img " src="images/系统业务层级/u24_seg1.png" alt="u59_seg1"/>
+        <img id="u59_seg2" class="img " src="images/系统业务层级/u41_seg2.png" alt="u59_seg2"/>
+        <img id="u59_seg3" class="img " src="images/系统业务层级/u41_seg3.png" alt="u59_seg3"/>
+        <div id="u59_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u60" class="ax_default connector">
+        <img id="u60_seg0" class="img " src="images/线下门店管理/u59_seg0.png" alt="u60_seg0"/>
+        <img id="u60_seg1" class="img " src="images/系统业务层级/u25_seg1.png" alt="u60_seg1"/>
+        <img id="u60_seg2" class="img " src="images/系统业务层级/u41_seg2.png" alt="u60_seg2"/>
+        <img id="u60_seg3" class="img " src="images/系统业务层级/u41_seg3.png" alt="u60_seg3"/>
+        <div id="u60_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u61" class="ax_default flow_shape">
+        <div id="u61_div" class=""></div>
+        <div id="u61_text" class="text ">
+          <p><span>线下门店</span></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
